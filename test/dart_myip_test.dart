@@ -1,16 +1,21 @@
 import 'package:dart_myip/dart_myip.dart';
+import 'package:dart_myip/src/function.dart';
 import 'package:test/test.dart';
 
 void main() {
-  group('A group of tests', () {
-    final awesome = Awesome();
+  group('A simple test', () {
+    // setUp(() {
+    //   // Additional setup goes here.
+    // });
 
-    setUp(() {
-      // Additional setup goes here.
+    test('Version', () {
+      expect(VERSION, '0.0.1');
     });
 
-    test('First Test', () {
-      expect(awesome.isAwesome, isTrue);
+    test('First Test', () async {
+      final ip = await getMyIP();
+
+      expect(ip.ip, isA<String>());
     });
   });
 }

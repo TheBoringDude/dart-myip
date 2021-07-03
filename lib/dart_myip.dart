@@ -1,8 +1,8 @@
-/// Support for doing something awesome.
-///
-/// More dartdocs go here.
 library dart_myip;
 
-export 'src/dart_myip_base.dart';
+export 'src/base.dart';
+export 'src/errors.dart';
+export 'src/function.dart';
+export 'src/request.dart';
 
-// TODO: Export any libraries intended for clients of this package.
+const VERSION = '0.0.1';
