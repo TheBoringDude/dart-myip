@@ -1,19 +1,15 @@
-A library for Dart developers.
+# dart_myip
+
+A simple library for client ip geolocation.
 
 ## Usage
 
-A simple usage example:
-
 ```dart
-import 'package:dart_myip/dart_myip.dart';
+ClientIP ip = await getMyIP();
 
-main() {
-  var awesome = new Awesome();
-}
+print(ip.ip);
 ```
 
-## Features and bugs
+##
 
-Please file feature requests and bugs at the [issue tracker][tracker].
-
-[tracker]: http://example.com/issues/replaceme
+#### &copy; 2021 | TheBoringDude
